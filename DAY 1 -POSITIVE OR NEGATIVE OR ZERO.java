@@ -6,15 +6,15 @@ public class Main
          int k=s.nextInt();
          if(k<0)
          {
-            System.out.println("Negative"); 
+            System.out.println("negative"); 
          }
          else if(k>0)
          {
-             System.out.println("Positive");
+             System.out.println("positive");
          }
          else
          {
-             System.out.println("Zero");
+             System.out.println("zero");
          }
 	}
 }

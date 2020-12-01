@@ -2,8 +2,11 @@ import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
+	
 		Scanner s=new Scanner(System.in);
+		
         int num=1;
+	
         while(num<=100)
         {
             System.out.print(num+" ");

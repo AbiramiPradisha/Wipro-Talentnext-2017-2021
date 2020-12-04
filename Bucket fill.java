@@ -36,6 +36,15 @@ class FloodFill{
             return;
 
         }
+        else if (arr[x][y] == existingColor){
+            
+              arr[x][y] = color;
+            
+              fill(x - 1, y, existingColor, color);
+              fill(x + 1, y, existingcolor, color);
+              fill(x, y + 1, existingcolor, color);
+              fill(x, y - 1, existingcolor, color);
+        }
         
     }
 

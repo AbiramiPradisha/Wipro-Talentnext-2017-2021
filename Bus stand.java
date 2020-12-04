@@ -18,23 +18,7 @@ public class Solution{
 
     }
     static List<Integer> solve(int[] a){
-        int sum = Arrays.stream(a).sum();
-        List<Integer> sizes = new ArrayList<Integer>();
-        for(int i = 1; i * i <= sum; i++){
-               if(sum % i == 0){
-                   if(isValid(a, i)){
-                       sizes.add(i);
-
-                   }
-                   if(i * i != sum){
-                       if(isValid(a, sum / i)){
-                           sizes.add(sum / i);
-                       }
-                   }
-               }
-        }
-        Collections.sort(sizes);
-        return sizes;
+        
     }
     static boolean isValid(int[] a, int size){
         int remain = size;

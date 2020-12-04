@@ -35,8 +35,11 @@ class FloodFill{
         if (x < 0 || x >= arr.length || y < 0 || y >= arr[0].length || arr[x][y] == color){
             return;
 
-        }else if (arr[x][y] == existingColor){
+        }
+        else if (arr[x][y] == existingColor){
+            
               arr[x][y] = color;
+            
               fill(x - 1, y,existingColor, color);
               fill(x + 1, y,existingcolor, color);
               fill(x, y + 1,existingcolor, color);

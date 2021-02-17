@@ -7,6 +7,7 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -25,9 +26,12 @@ public class Solution {
         {
             current[0] = previous[1];
             current[1] = previous[0] + previous[2] % mod;
+            
             current[2] = sumPrevious;
             current[3] = (previous[2] + previous[4]) % mod;
+            
             current[4] = previous[0];
+            
             sumPrevious = 0;
             for(int j = 0; j < 5;j++){
                 previous[j] = current[j];
